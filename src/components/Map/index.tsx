@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
-import { MapContainer, TileLayer, Marker } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, MapConsumer } from 'react-leaflet';
+import L from 'leaflet';
 
 import * as S from './styles';
 
@@ -35,6 +36,13 @@ const CustomTileLayer = () => {
   );
 };
 
+const makerIcon = new L.Icon({
+  iconUrl: 'img/pin-64.png',
+  iconSize: [40, 40],
+  iconAnchor: [20, 30],
+  popupAnchor: [0, -40]
+});
+
 const Map = ({ places }: MapProps) => {
   const router = useRouter();
 
@@ -46,12 +54,28 @@ const Map = ({ places }: MapProps) => {
         style={{ height: '100%', width: '100%' }}
         attributionControl={false}
         minZoom={3}
+        mazZoom={4}
+        maxNativeZoom={4}
         // worldCopyJump={true}
         maxBounds={[
           [-180, 180],
           [180, -180]
         ]}
       >
+        <MapConsumer>
+          {(map) => {
+            const width =
+              window.innerWidth ||
+              document.documentElement.clientWidth ||
+              document.body.clientWidth;
+
+            if (width < 768) {
+              map.setMinZoom(2);
+            }
+
+            return null;
+          }}
+        </MapConsumer>
         <CustomTileLayer />
 
         {places?.map(({ id, name, slug, location }) => {
@@ -62,6 +86,7 @@ const Map = ({ places }: MapProps) => {
               key={`place-${id}`}
               position={[latitude, longitude]}
               title={name}
+              icon={makerIcon}
               eventHandlers={{
                 click: () => {
                   router.push(`/place/${slug}`);

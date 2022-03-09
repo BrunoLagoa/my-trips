@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://my-trips.brunocastro.dev
+
+# Sitemaps
+Sitemap: https://my-trips.brunocastro.dev/sitemap.xml

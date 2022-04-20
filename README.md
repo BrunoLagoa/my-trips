@@ -1,34 +1,91 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<h1 align="center">
+    MyTrip
+    <br/><br/>
+</h1>
 
-## Getting Started
+<p align="center">
+  <a href="#sobre">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#setup">Setup</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#licença">Licença</a>
+</p>
 
-First, run the development server:
+<p align="center">
+ <img src="https://img.shields.io/static/v1?label=PRs&message=welcome&color=15C3D6&labelColor=000000" alt="PRs welcome!" />
+
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=15C3D6&labelColor=000000">
+</p>
+
+<br>
+
+## Projeto
+
+Projeto criado com NextJS: Projeto onde exibe pontos em um mapa, quando clicado ele mostrar mais informações e fotos.
+
+## Tecnologias
+
+Esse projeto foi desenvolvido com as seguintes tecnologias:
+
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [React](https://reactjs.org)
+- [TypeScript](https://www.typescriptlang.org)
+- [Leaflet](https://leafletjs.com)
+- [GraphCMS](https://graphcms.com)
+- [NextJS](https://nextjs.org)
+- [GraphQL](https://graphql.org)
+- [Styled Components](https://styled-components.com)
+
+
+## Setup
+
+Clone o repositório em sua maquina:
+
+`git clone https://github.com/BrunoLagoa/my-trips.git`
+
+- Abra as pastas e execute `yarn` para instalar todas as dependencies
+
+### **Frontend**
 
 ```bash
-npm run dev
-# or
-yarn dev
+# Entre no repositório
+$ cd my-trips
+
+# Instale as dependências
+$ yarn
+
+# Execute a aplicação
+$ yarn dev
+
+# Será executado na port 3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Layout
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+<div align="center">
+    <img alt="Desktop" title="#Desktop" src="public/img/mockup.jpg" width="680px" />
+</div>
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+<br/><br/>
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+---
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Licença
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+<h3 align="center">
+Autor: <a alt="Bruno Castro" href="https://brunocastro.dev">Bruno Castro</a>
+</h3>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<p align="center">
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  <a alt="Bruno Castro Linkedin" href="https://www.linkedin.com/in/brunovcastro">
+    <img src="https://img.shields.io/badge/LinkedIn-Bruno%20Castro-blue?logo=linkedin"/></a>
+  <a alt="Bruno Castro GitHub" href="https://github.com/brunolagoa">
+  <img src="https://img.shields.io/badge/GitHub-Bruno%20Castro-lightgrey?logo=github"/></a>
+
+</p>

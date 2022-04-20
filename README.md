@@ -68,8 +68,10 @@ $ yarn dev
 
 <br/><br/>
 
----
+<p>Site publicado em:</p>
+<a alt="Bruno Castro" target="_blank" rel="noopener noreferrer" href="https://my-trips.brunocastro.dev">Clique aqui para visualizar</a>
 
+---
 
 ## Licença
 

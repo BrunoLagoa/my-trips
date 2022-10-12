@@ -91,3 +91,7 @@ Autor: <a alt="Bruno Castro" href="https://brunocastro.dev">Bruno Castro</a>
   <img src="https://img.shields.io/badge/GitHub-Bruno%20Castro-lightgrey?logo=github"/></a>
 
 </p>
+
+<p>
+  [![@brunolagoa's Holopin board](https://holopin.me/brunolagoa)](https://holopin.io/@brunolagoa)
+</p>
